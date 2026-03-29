@@ -28,29 +28,19 @@ nav {
     gap: 30px;
 }
 
-.dropbtn {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    color: #777;
-    cursor: pointer;
-    font-style: italic;
-    padding: 0;
-    outline: none;
-}
-
-.dropbtn:hover {
-    color: #000;
-}
-
-nav a {
+nav a, .dropbtn {
     text-decoration: none;
     color: #777;
     font-style: italic;
     transition: 0.2s;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0;
 }
 
-nav a:hover {
+nav a:hover, .dropdown:hover .dropbtn {
     color: #000;
 }
 
@@ -59,11 +49,42 @@ h1 {
     text-align: center;
     font-weight: 400;
     letter-spacing: -1px;
+    margin-bottom: 0;
 }
 
 h2 {
     margin-top: 50px;
     font-weight: 700;
+}
+
+.articles-heading {
+    margin-top: 80px;
+    border-top: 1px double #eee;
+    padding-top: 40px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #555;
+}
+
+.post-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-list li {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.post-list a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.post-list a:hover {
+    text-decoration: underline;
 }
 
 .date {
@@ -87,16 +108,29 @@ h2 {
     z-index: 1;
     border: 1px solid #eee;
     margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .dropdown-content a {
     color: #666;
     padding: 10px 15px;
     display: block;
-    text-align: left;
+    text-align: center;
     font-size: 0.9rem;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    color: #ccc;
+    font-size: 0.8rem;
+}
+
+article {
+    margin-bottom: 100px;
 }
