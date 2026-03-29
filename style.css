@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-
 * {
-    font-family: 'Libre Baskerville', serif !important;
+    font-family: "Times New Roman", Times, serif !important;
 }
 
 body {
@@ -18,7 +16,7 @@ header {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-align: center;
     font-weight: 400;
     margin-bottom: 10px;
@@ -36,4 +34,66 @@ nav {
 .nav-container {
     display: flex;
     justify-content: center;
-    gap: 30px
+    gap: 30px;
+}
+
+/* This removes the blue color from all links */
+a {
+    text-decoration: none;
+    color: #2c2c2c; 
+    transition: 0.2s;
+}
+
+nav a {
+    color: #777;
+    font-style: italic;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    margin-bottom: 60px;
+}
+
+.post-link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.post-link-list li {
+    margin-bottom: 25px;
+}
+
+.post-link-list a {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.date {
+    font-style: italic;
+    color: #999;
+    font-size: 0.9rem;
+    display: block;
+}
+
+article {
+    margin-bottom: 80px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+h2 {
+    margin-top: 0;
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    margin-top: 80px;
+    color: #ccc;
+    font-size: 0.8rem;
+}
