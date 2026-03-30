@@ -37,7 +37,6 @@ nav {
     gap: 30px;
 }
 
-/* This removes the blue color from all links */
 a {
     text-decoration: none;
     color: #2c2c2c; 
